@@ -1,0 +1,101 @@
+/* Sidebar width — updated by SidebarProvider */
+:root {
+  --aegis-sidebar-width: 230px;
+}
+#sp-appBar {
+  display: none !important;
+}
+#SuiteNavWrapper,
+#spCommandBar,
+#spLeftNav,
+.ms-CommandBar,
+#O365_NavHeader,
+div[data-automation-id="pageHeader"] {
+  display: none !important;
+}
+#CommentsWrapper{
+  display: none !important;
+}
+
+
+/* Hide entire site header */
+[data-automationid="SiteHeader"] {
+  display: none !important;
+}
+
+/* Hide top navigation */
+.ms-HorizontalNav {
+  display: none !important;
+}
+
+/* Hide site title */
+#SiteHeaderTitle {
+  display: none !important;
+}
+/* App-wide typography — fonts loaded via ProjectAllocationWebPart */
+.aegisApp {
+  font-family: 'Plus Jakarta Sans', 'Segoe UI', -apple-system, BlinkMacSystemFont, 'Helvetica Neue', sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.55;
+  letter-spacing: -0.01em;
+  font-feature-settings: 'kern' 1, 'liga' 1, 'calt' 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+  font-variant-numeric: tabular-nums;
+}
+
+.aegisApp h1,
+.aegisApp h2,
+.aegisApp h3,
+.aegisApp h4,
+.aegisApp strong {
+  font-weight: 700;
+  letter-spacing: -0.025em;
+}
+
+.aegisApp button,
+.aegisApp input,
+.aegisApp select,
+.aegisApp textarea {
+  font-family: inherit;
+}
+
+/* Full-width SPFx canvas — remove SharePoint column constraints */
+#workbenchPageContent,
+#spPageCanvasContent,
+.spAppAndPropertyPanelContainer,
+#CommentsWrapper,
+[data-automation-id="contentScrollRegion"],
+[data-automation-id="Canvas"],
+[data-automation-id="CanvasZone"],
+[data-automation-id="CanvasSection"],
+.CanvasComponent,
+.CanvasZone,
+.CanvasSection,
+.CanvasSection-col,
+.ControlZone,
+.ControlZone--control,
+div[class*="webPartContainer"],
+div[class*="WebPartZone"],
+div[class*="ControlZone"] {
+  max-width: 100% !important;
+  width: 100% !important;
+  box-sizing: border-box;
+}
+
+.content_3f3fd3c2,
+.CanvasZone,
+.CanvasSection-col,
+.ControlZone--control {
+  padding-left: 0 !important;
+  padding-right: 0 !important;
+  margin-left: 0 !important;
+  margin-right: 0 !important;
+}
+
+/* One-column full-width section */
+.CanvasZone:not(.CanvasZone--fullWidth) .ControlZone {
+  max-width: 100% !important;
+}

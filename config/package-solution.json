@@ -1,0 +1,40 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/spfx-build/package-solution.schema.json",
+  "solution": {
+    "name": "project-allocation-client-side-solution",
+    "id": "baed8d40-71fd-4928-ae3c-0cd6a3d548e3",
+    "version": "1.0.0.0",
+    "includeClientSideAssets": true,
+    "skipFeatureDeployment": true,
+    "isDomainIsolated": false,
+    "developer": {
+      "name": "",
+      "websiteUrl": "",
+      "privacyUrl": "",
+      "termsOfUseUrl": "",
+      "mpnId": "Undefined-1.22.2"
+    },
+    "metadata": {
+      "shortDescription": {
+        "default": "ProjectAllocation description"
+      },
+      "longDescription": {
+        "default": "ProjectAllocation description"
+      },
+      "screenshotPaths": [],
+      "videoUrl": "",
+      "categories": []
+    },
+    "features": [
+      {
+        "title": "project-allocation Feature",
+        "description": "The feature that activates elements of the project-allocation solution.",
+        "id": "ed2bbda8-69aa-4f33-ab28-7ac128cba9e5",
+        "version": "1.0.0.0"
+      }
+    ]
+  },
+  "paths": {
+    "zippedPackage": "solution/project-allocation.sppkg"
+  }
+}

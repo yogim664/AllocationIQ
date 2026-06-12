@@ -1,0 +1,67 @@
+// Brand & layout tokens — primary: #7c3aed
+$primary: #7c3aed;
+$primary-dark: #6d28d9;
+$primary-darker: #5b21b6;
+$secondary: #8b5cf6;
+$accent: #a78bfa;
+$primary-50: #f5f3ff;
+$primary-100: #ede9fe;
+$primary-200: #ddd6fe;
+$primary-shadow: rgba(124, 58, 237, 0.12);
+$primary-shadow-md: rgba(124, 58, 237, 0.22);
+$primary-shadow-lg: rgba(124, 58, 237, 0.35);
+
+$sidebar-width: 230px;
+$sidebar-width-collapsed: 72px;
+$content-padding-x: 28px;
+$content-padding-y: 24px;
+$content-padding-bottom: 36px;
+
+$font: 'Plus Jakarta Sans', 'Segoe UI', -apple-system, BlinkMacSystemFont, 'Helvetica Neue', sans-serif;
+$font-mono: 'JetBrains Mono', Consolas, 'Courier New', monospace;
+
+$font-weight-regular: 400;
+$font-weight-medium: 500;
+$font-weight-semibold: 600;
+$font-weight-bold: 700;
+$font-weight-extrabold: 800;
+
+$text-xs: 11px;
+$text-sm: 13px;
+$text-base: 14px;
+$text-lg: 16px;
+$text-xl: 20px;
+$text-2xl: 26px;
+
+$tracking-tight: -0.025em;
+$tracking-tighter: -0.045em;
+$tracking-normal: -0.01em;
+$tracking-wide: 0.06em;
+$tracking-wider: 0.1em;
+
+$leading-tight: 1.3;
+$leading-normal: 1.55;
+$leading-relaxed: 1.7;
+$success: #10b981;
+$warning: #f59e0b;
+$danger: #ef4444;
+$surface: #ffffff;
+$text: #0f172a;
+$muted: #64748b;
+$border: #e2e8f0;
+$radius: 12px;
+$radius-lg: 18px;
+$shadow-sm: 0 1px 2px rgba(15, 23, 42, 0.05);
+$shadow: 0 4px 6px -1px rgba(15, 23, 42, 0.07), 0 12px 28px -8px $primary-shadow;
+$shadow-lg: 0 20px 40px -12px $primary-shadow-md, 0 8px 16px -6px rgba(15, 23, 42, 0.06);
+
+$page-gradient: linear-gradient(165deg, #f8fafc 0%, $primary-50 38%, #eef2ff 72%, #f1f5f9 100%);
+
+$glass: rgba(255, 255, 255, 0.72);
+$glass-border: rgba(255, 255, 255, 0.85);
+$glass-blur: blur(20px) saturate(1.4);
+
+$shadow-premium:
+  0 0 0 1px rgba(15, 23, 42, 0.03),
+  0 2px 4px rgba(15, 23, 42, 0.04),
+  0 12px 32px -8px rgba(124, 58, 237, 0.12);
