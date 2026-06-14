@@ -73,7 +73,11 @@ npm install
 heft start
 ```
 
-Open the workbench at: `https://localhost:4321/workbench`
+Open the workbench at:
+
+```
+https://localhost:4321/workbench
+```
 
 ---
 
@@ -85,13 +89,17 @@ Open the workbench at: `https://localhost:4321/workbench`
 heft build
 ```
 
-Output: `solution/project-allocation.sppkg`
+Output:
+
+```
+solution/project-allocation.sppkg
+```
 
 ### Deploy to SharePoint
 
 1. Upload `project-allocation.sppkg` to your **SharePoint App Catalog**
 2. Add the web part to a SharePoint page
-3. Configure the required SharePoint lists (see [SharePoint Lists](#sharepoint-lists))
+3. Configure the required SharePoint lists (see SharePoint Lists section)
 
 ---
 
@@ -108,13 +116,30 @@ Output: `solution/project-allocation.sppkg`
 
 ### Key Columns
 
-**Project List**
-- `ProjectCode`, `ProjectName`, `Client`, `StartDate`, `EndDate`
-- `Budget`, `Priority`, `RequiredSkills`, `Description`, `isManagerApproved`
+#### Project List
 
-**TaskDetails List**
-- `Task`, `Sno`, `ProjectCode`, `Assignee`, `Lane`, `Effort`
-- `Status`, `StartDate`, `EndDate`
+- `ProjectCode`
+- `ProjectName`
+- `Client`
+- `StartDate`
+- `EndDate`
+- `Budget`
+- `Priority`
+- `RequiredSkills`
+- `Description`
+- `isManagerApproved`
+
+#### TaskDetails List
+
+- `Task`
+- `Sno`
+- `ProjectCode`
+- `Assignee`
+- `Lane`
+- `Effort`
+- `Status`
+- `StartDate`
+- `EndDate`
 
 ---
 
@@ -132,7 +157,7 @@ Three Azure AI Foundry agents power the intelligence layer:
 
 ## Project Structure
 
-```
+```text
 AllocationIQ/
 ├── src/
 │   ├── webparts/
@@ -162,7 +187,7 @@ AllocationIQ/
 
 ## Architecture
 
-```
+```text
 ┌──────────────────────────────────────────────────────────┐
 │                  AllocationIQ Web Part                   │
 ├──────────────────────────────────────────────────────────┤
@@ -180,6 +205,28 @@ AllocationIQ/
 │   TeamAllocation, PlanningAgent)                        │
 └──────────────────────────────────────────────────────────┘
 ```
+
+---
+
+## Workflow Diagram
+
+The following diagram illustrates the end-to-end AllocationIQ workflow.
+
+![AllocationIQ Workflow](./src/webparts/projectAllocation/assets/WorkFlow/WorkFlow.png)
+
+### Workflow Overview
+
+1. User uploads a Statement of Work (SOW) or project brief.
+2. **ProjectAnalysisAgent** extracts project requirements, scope, skills, timeline, and budget details.
+3. Project information is saved to the SharePoint **Project** list.
+4. **TeamAllocation** analyzes employee skills and availability.
+5. Recommended team members are generated automatically.
+6. **PlanningAgent** creates milestones, phases, and task breakdowns.
+7. Manager reviews the project and allocation recommendations.
+8. Approval workflow updates the project status.
+9. Project assignments are stored in **ProjectParticipation**.
+10. Tasks are tracked through **TaskDetails**.
+11. Dashboard provides real-time visibility into project progress, resources, and budgets.
 
 ---
 
@@ -206,4 +253,6 @@ This code is provided **as-is** without warranty of any kind, either express or 
 
 ---
 
-<p align="center">Built with Heft + SPFx 1.22.2 &nbsp;|&nbsp; <strong>AllocationIQ</strong></p>
+<p align="center">
+  Built with Heft + SPFx 1.22.2 &nbsp;|&nbsp; <strong>AllocationIQ</strong>
+</p>
