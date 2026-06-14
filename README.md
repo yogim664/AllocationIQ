@@ -245,11 +245,7 @@ The following diagram illustrates the end-to-end AllocationIQ workflow.
 - [PnPjs Documentation](https://pnp.github.io/pnpjs/)
 - [Microsoft 365 Patterns and Practices](https://pnp.github.io/)
 
----
 
-## License
-
-This code is provided **as-is** without warranty of any kind, either express or implied, including any implied warranties of fitness for a particular purpose, merchantability, or non-infringement.
 
 ---
 
